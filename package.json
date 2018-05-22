@@ -1,0 +1,16 @@
+{
+  "name": "source.docs",
+  "version": "1.0.0",
+  "repository": "git@github.com:9xdp/source.docs.git",
+  "scripts": {
+    "docs:dev": "vuepress dev",
+    "docs:build": "vuepress build",
+    "generate": "rimraf .vuepress/dist && vuepress build",
+    "deploy": "push-dir --dir=.vuepress/dist --branch=gh-pages --cleanup --force"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1",
+    "rimraf": "^2.6.2",
+    "vuepress": "^0.8.4"
+  }
+}
